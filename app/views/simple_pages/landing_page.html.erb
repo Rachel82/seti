@@ -1,24 +1,17 @@
-<h2>Featured Posts:</h2>
+<h2 class="featured_post">Featured Posts:</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Category</th>
-      <th>Title</th>
-      <th>Content</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+<div class="container-fluid">
+  <div class="row">
     <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.category %></td>
-        <td><%= post.title %></td>
-        <td><%= post.content %>
-        <%= link_to 'Show', post %></td>
-      </tr>
+    <div class=" col-md-2">
+      <a href="#"><p><%= post.category.name %></p></a>
+      <h3><%= post.title %></h3>
+      <p>January 1, 2018<p>
+      <%= image_tag("test.jpg", class: "img-responsive") %>
+      <p><%= post.content %> <%= link_to 'Show', post %></p>
+    </div><!-- /col -->
     <% end %>
-    </tbody>
-</table>
+  </div>
+</div>
 
