@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'jquery-rails'
 
+gem "paperclip", "~> 5.0.0"
+
 group :production do
   gem 'pg'
 end
