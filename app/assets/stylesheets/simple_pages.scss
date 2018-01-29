@@ -48,9 +48,21 @@ nav,
 ul.nav {
 	width: 100%;
 }
+
 .d-inline-flex {
 	width: 100%;
 }
+
+li.dropdown-item {
+	font-size: 9px;
+}
+
+li.nav-link>ul.dropdown-menu:hover{
+	background-color: pink;
+	visibility: visible;
+}
+
+
 
 li.nav-item {
 	font-family: Adobe Garamond W01;
@@ -86,8 +98,3 @@ border-bottom: 1px solid #eeeeee;
 z-index: -1;
 }
 
-.col-md-2 {
-	margin: 0 50px 100px;
-	text-align: center;
-
-}

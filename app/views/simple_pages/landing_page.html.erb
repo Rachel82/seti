@@ -1,18 +1,18 @@
-<div class="line-separator"></div>
-<h4 class="featured_post">latest in</h4>
-
 
 <div class="container">
-  <div class="row">
+<div class="line-separator"></div>
+  <h1 class="featured_post">latest in</h1>
+    <div class="row justify-content-around">
     <% @posts.each do |post| %>
-    <div class=" col-md-6">
+    <div class="col-md-6 ">
       <a href="#"><p><%= post.category.name %></p></a>
-      <h3><%= post.title %></h3>
-      <p>January 1, 2018<p>
-      <%= image_tag("test.jpg", class: "img-responsive") %>
+      <h2><%= post.title %></h2>
+      <p>January 1, 2018</p>
+      <%= image_tag post.image.url(:large) %>
       <p><%= post.content %> <%= link_to 'Show', post %></p>
-    </div><!-- /col -->
-    <% end %>
-  </div>
-</div>
+    </div><!-- col -->
+    <% end %><!-- post loop -->
+  </div><!-- end row -->
+</div><!-- end Container -->
+
 

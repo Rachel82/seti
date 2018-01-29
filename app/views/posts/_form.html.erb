@@ -2,7 +2,6 @@
   <% if post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
-
       <ul>
       <% post.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -21,6 +20,7 @@
     <%= form.text_field :title, id: :post_category %>
     <%= form.collection_select :category_id, Category.all, :id, :name %>
   </div>
+  
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title, id: :post_title %>
