@@ -36,6 +36,7 @@ gem "paperclip", "~> 5.1.0"
 
 group :production do
   gem 'pg'
+  gem "paperclip", "~> 5.1.0"
 end
 
 group :development, :test do
