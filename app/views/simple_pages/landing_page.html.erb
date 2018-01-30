@@ -1,18 +1,18 @@
 
 <div class="container">
-<div class="line-separator"></div>
-  <h1 class="featured_post">latest in</h1>
+  <div class="line-separator"></div>
+    <h1 class="featured_post">latest in</h1> 
     <div class="row justify-content-around">
-    <% @posts.each do |post| %>
-    <div class="col-md-6 ">
-      <a href="#"><p><%= post.category.name %></p></a>
-      <h2><%= post.title %></h2>
-      <p>January 1, 2018</p>
-      <%= image_tag post.image.url(:large) %>
-      <p><%= post.content %> <%= link_to 'Show', post %></p>
-    </div><!-- col -->
-    <% end %><!-- post loop -->
-  </div><!-- end row -->
+      <% @posts.each do |post| %>
+      <div class="col-md-6 content-post">
+        <a href="#"><h2><%= post.category.name %></h2></a>
+        <h3><%= post.title %></h3>
+        <h4>January 1, 2018</h4>
+        <%= image_tag post.image.url(:large) %>
+        <p><%= post.content %> <%= link_to 'Show', post %></p>
+      </div><!-- col -->
+      <% end %><!-- post loop -->
+    </div><!-- end row -->
 </div><!-- end Container -->
 
 

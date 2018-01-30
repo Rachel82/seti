@@ -62,7 +62,9 @@ li.nav-link>ul.dropdown-menu:hover{
 	visibility: visible;
 }
 
-
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
 
 li.nav-item {
 	font-family: Adobe Garamond W01;
@@ -78,23 +80,31 @@ li.nav-item {
 	padding: 70px;
 }
 
-h4.featured_post {
+h1.featured_post {
 	font-family: Adobe Garamond W01;
 	font-size: 1em;
 	letter-spacing: 2px;
 	color: #595959;
 	text-transform: uppercase;
-	margin-left: 550px;
-	display: inline-block;
+	display: block;
+	text-align: center;
 	background-color:white;
 }
 
 .line-separator{
 position: relative;
-top: 90px;
+top: 80px;
 height: 3px;
 background-color: #eeeeee;
 border-bottom: 1px solid #eeeeee;
-z-index: -1;
 }
 
+
+.content-post {
+	text-align:center;
+	padding: 20px;
+}
+
+img.col-md-6 {
+	margin-right: 20px;
+}
