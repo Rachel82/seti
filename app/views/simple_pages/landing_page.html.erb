@@ -2,7 +2,7 @@
 <div class="container">
   <div class="line-separator"></div>
     <h1 class="featured_post">latest in</h1> 
-    <div class="row justify-content-around">
+    <div class="row">
       <% @posts.each do |post| %>
       <div class="col-md-6 content-post">
         <a href="#"><h2><%= post.category.name %></h2></a>
