@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>SETI</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <%= favicon_link_tag 'favicon.ico' %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -16,7 +17,17 @@
   <body>
   	<div class="container-fluid">
   		<header>
-        logo - search - socialmedia
+        <div class="row justify-content-end">
+          <div class="col-md-4 col-sm-4">
+            <div class="navbar-form search_bar">
+              <%= form_with(url: posts_path, method: 'get', local: true) do |form| %>
+                <%= form.label :q, 'Search the blog', class: 'search-label' %>
+                <%= form.text_field :q, id: 'q', value: params[:q], class: 'search-field' %>
+                <%= form.submit 'Search', class: 'search-submit' %>
+              <% end %>
+            </div>
+          </div>
+        </div>
   		</header><!-- end HEADER -->
   		<nav class="navbar navbar-expand-sm">
         <div class ="d-inline-flex">

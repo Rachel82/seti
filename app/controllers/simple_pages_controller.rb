@@ -2,6 +2,7 @@ class SimplePagesController < ApplicationController
 
 	def landing_page
 		@posts = Post.limit(4).order("created_at DESC")
+    
 	end
 
   def index

@@ -34,9 +34,10 @@ gem 'jquery-rails'
 
 gem "paperclip", "~> 5.1.0"
 
+gem "font-awesome-rails"
+
 group :production do
   gem 'pg'
-  gem "paperclip", "~> 5.1.0"
 end
 
 group :development, :test do

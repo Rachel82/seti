@@ -19,6 +19,9 @@ body {
 	overflow: hidden;
 }
 
+.landing_page {
+	text-align: center;
+}
 main {
 	margin-bottom: 80px;
 }
@@ -32,8 +35,28 @@ header {
 	text-align: center;
 	border-top: 3px solid #9A928D;
 }
-.logo-item {
+
+img.logo-item {
 	margin: 5px auto;
+	height: 90px;
+	width: 90px;
+}
+
+@media screen and (max-width:875px){
+  img.logo-item {width: 70px;;
+  							height: 100%;
+  							}
+}
+
+@media screen and (max-width:772px){
+  img.logo-item {width: 50px;;
+  							height: 100%;
+  							}
+}
+@media screen and (max-width:320px){
+  img.logo-item {width: 30px;
+  							height: 100%;
+  							}
 }
 
 footer {
@@ -61,6 +84,18 @@ ul.nav {
 	width: 100%;
 }
 
+label.search-label {
+	display: inline-block;
+	margin-bottom: 0px;
+	position: absolute;
+	padding-left: 30px;
+	padding-top: 4px;
+}
+
+.navbar-form {
+	margin-top: 10px;
+}
+
 li.dropdown-item {
 	font-size: 9px;
 }
@@ -80,6 +115,10 @@ li.nav-item {
 }
 
 /**** Landing_page ****/
+
+main {
+	padding-top: 20px;
+}
 .featured_post {
 	padding: 70px;
 }
@@ -94,20 +133,23 @@ h1.featured_post {
 	background-color:white;
 	text-align: center;
 	position: relative;
-	left: 40%;
+	top: -26px;
+	padding: 0px;
 }
+
 
 .logo-item {
 	width: auto;
 	height: 100%;
 }
+/****
 .line-separator{
 position: relative;
 top: 80px;
 height: 3px;
 background-color: #eeeeee;
 border-bottom: 1px solid #eeeeee;
-}
+} ****/
 
 .content-title {
 	position: absolute;
@@ -183,4 +225,24 @@ button.btn {
 .content-post {
 	text-align:center;
 	padding: 20px;
+}
+
+/**** Contact ****/
+
+.contact-form {
+	width: 50%;
+}
+
+h1.contact-prompt {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.contact-thank {
+	text-align: center;
+	margin-top: 150px;
+}
+p.home-link {
+	text-align: center;
 }
