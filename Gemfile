@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'jquery-rails'
 
-gem "paperclip", "~> 5.1.0"
+gem "paperclip", "~> 5.2.0"
 
 gem "font-awesome-rails"
 
