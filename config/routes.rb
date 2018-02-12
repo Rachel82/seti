@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :posts do
+    resources :comments
+  end
   resources :users
-  resources :comments
-  resources :posts
 
 	root 'simple_pages#landing_page'
 
